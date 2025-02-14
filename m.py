@@ -8,8 +8,6 @@ import asyncio
 import aiohttp
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-from keep_alive import keep_alive
-keep_alive()
 # insert your Telegram bot token here
 bot = telebot.TeleBot('7590495904:AAFdglWV5N7utNySffevsgAeUuaMcintVS0')
 
@@ -26,7 +24,7 @@ ADMIN_FILE = "admins.txt"
 LOG_FILE = "log.txt"
 
 ongoing_attacks = {}
-MAX_CONCURRENT_ATTACKS = 10  # Set the max concurrent users who can launch attacks
+MAX_CONCURRENT_ATTACKS = 2  # Set the max concurrent users who can launch attacks
 
 #this id proxy by attackddosowner
 def update_proxy():
