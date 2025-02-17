@@ -388,8 +388,8 @@ def handle_bgmi1(message):
             target = command[1]
             port = int(command[2])  # Convert port to integer
             time = int(command[3])  # Convert time to integer
-            if time > 120:
-                response = "Error: Time interval must be less than 120."
+            if time > 180:
+                response = "Error: Time interval must be less than 180."
             else:
                 # Add this attack to the ongoing attacks
                 ongoing_attacks[user_id] = datetime.datetime.now()
